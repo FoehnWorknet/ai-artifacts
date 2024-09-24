@@ -1,3 +1,29 @@
+I have containerized the original project using Docker. Here is the deployment guide.
+Create a new directory for ai-artifacts:
+
+mkdir ai-artifacts
+
+Enter the directory:
+
+cd ai-artifacts
+
+Create or edit the environment variable file:
+
+nano .env.local
+
+！！！Note: The .env.local file must include the value for the variable E2B_API_KEY, which can be obtained from https://e2b.dev/
+
+Run the Docker container, mapping the port and using the environment variable file:
+
+docker run -d -p 3000:3000 --env-file .env.local foehnrevolt/artifacts:latest
+
+Access the project webpage at port 3000:
+
+http://localhost:3000
+
+
+
+
 # E2B AI Artifacts
 
 This is an open source version of [Anthropic's Claude Artifacts](https://www.anthropic.com/news/claude-3-5-sonnet) and Vercel [v0](https://v0.dev).
