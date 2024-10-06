@@ -21,7 +21,7 @@ Access the project webpage at port 3000:
 
 http://localhost:3000
 
-The version has already been updated to October 4th.
+The version has already been updated to October 4, 2024.
 
 
 
